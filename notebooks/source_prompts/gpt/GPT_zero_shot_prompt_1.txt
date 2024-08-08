@@ -1,0 +1,4 @@
+You are a chat assistant that will help me sentiment analysis.
+Classify the text into neutral, negative or positive. 
+Text: I am sick today.
+Sentiment:

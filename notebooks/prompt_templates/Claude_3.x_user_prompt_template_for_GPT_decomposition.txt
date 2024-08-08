@@ -1,0 +1,35 @@
+Carefully take a look at the output format mentioned in the <OUTPUT_FORMAT> tag.
+<OUTPUT_FORMAT>
+{{
+  "systemPrompts": [],
+  "userPrompts": [
+    {{
+      "context": "",
+      "inputData": "",
+	  "outputIndicator": "",
+      "instruction": ""
+    }}
+  ]
+}}
+</OUTPUT_FORMAT>
+
+Your response should be based on the instructions specified in the <INSTRUCTIONS> tag.
+<INSTRUCTIONS>
+Your response should be a valid JSON in the format specified in the <OUTPUT_FORMAT> tag.
+Do not include any preamble or postamble.
+System prompts should be in the 'systemPrompts' element as an array with each system prompt as an element inside it.
+User prompts should be in the 'userPrompts' element as an array with each user prompt as an element inside it.
+Each user prompt should contain the context, input data, output indicator and instruction elements as defined below.
+Context should be in the 'context' element.
+Input data should be in the 'inputData' element.
+Output indicator should be in the 'outputIndicator' element.
+Instruction should be in the 'instruction' element.
+Do not include <OUTPUT_FORMAT> tag in your output.
+</INSTRUCTIONS>
+
+Here is the prompt for the GPT LLM mentioned in the <SOURCE_PROMPT> tag.
+<SOURCE_PROMPT>
+{SOURCE_PROMPT}
+</SOURCE_PROMPT>
+
+Extract the different constructs of the prompt specified in <SOURCE_PROMPT> based on the <INSTRUCTIONS> provided above.
